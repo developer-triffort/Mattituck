@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.triffortali.mattiluck"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="auto" >
+	<supports-screens
+	    android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+	    />
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.triffortali.mattiluck.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.SearchCatalogActivity"
+            android:label="@string/title_activity_search_catalog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.SearchCollectionActivity"
+            android:label="@string/title_activity_search_collection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.SearchMovieActivity"
+            android:label="@string/title_activity_search_movie"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.SearchAudiobookActivity"
+            android:label="@string/title_activity_search_audiobook"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.LibraryInfoActivity"
+            android:label="@string/title_activity_library_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.GeneralInfoActivity"
+            android:label="@string/title_activity_general_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.MyAccountActivity"
+            android:label="@string/title_activity_my_account"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.OnlineServiceActivity"
+            android:label="@string/title_activity_online_service"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.UniqueServiceActivity"
+            android:label="@string/title_activity_unique_service"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.LocalHistoryActivity"
+            android:label="@string/title_activity_local_history"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.MuseumActivity"
+            android:label="@string/title_activity_museum"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.WebActivity"
+            android:label="@string/title_activity_web"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.CalenderActivity"
+            android:label="@string/title_activity_calender"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.DatabaseActivity"
+            android:label="@string/title_activity_database"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.SetupNotificationActivity"
+            android:label="@string/title_activity_setup_notification"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.BCActivity"
+            android:label="@string/title_activity_bc"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.triffortali.mattiluck.DigitalLibraryActivity"
+            android:label="@string/title_activity_digital_library" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
