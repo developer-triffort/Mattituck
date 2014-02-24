@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- large -->
+<!-- 3.7 -->
+<resources>
+<!-- 	<dimen name="title">20dp</dimen>
+    <dimen name="sub_title">22dp</dimen>
+    <dimen name="menu">16dp</dimen>
+    <dimen name="menu_below">13dp</dimen>  -->
+
+    <dimen name="title">18dp</dimen>
+    <dimen name="sub_title">20dp</dimen>
+    <dimen name="menu">15dp</dimen>
+    <dimen name="menu_below">13dp</dimen>
+     <dimen name="angle">8dp</dimen>
+    <dimen name="gren">15dp</dimen>
+    <dimen name="war">0dp</dimen>
+</resources>
+<!-- large -->

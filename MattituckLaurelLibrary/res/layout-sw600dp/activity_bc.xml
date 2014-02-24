@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BCActivity" >
+    <RelativeLayout
+        android:id="@+id/bc_rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp" 
+        android:background="@drawable/black_bg"
+        android:layout_alignParentBottom="true"
+        >
+		<Button
+      	    android:visibility="invisible"
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:background="@drawable/back_btn"
+      	    android:layout_marginLeft="15dp" 
+      	    />
+    	<Button
+    	    android:id="@+id/bc_close"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="Cancel" 
+    	    android:textStyle="bold"
+    	    android:textColor="@android:color/white"
+    	    android:paddingLeft="10dp"
+    	    android:paddingRight="10dp"
+    	    android:paddingTop="5dp"
+    	    android:paddingBottom="5dp"
+    	    android:textSize="@dimen/menu"
+    	    android:background="@drawable/close_bg"
+    	    android:onClick="onBack"
+    	    android:layout_centerVertical="true"
+    	    />
+    </RelativeLayout>
+    <FrameLayout
+    android:id="@+id/cameraPreview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:layout_above="@+id/bc_rel1"
+  	/>
+    
+    
+</RelativeLayout>

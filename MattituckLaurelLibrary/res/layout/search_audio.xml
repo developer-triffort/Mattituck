@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+			android:id="@+id/ser_aud_title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textColor="@color/blue"
+			android:text="@string/s_audio_title"
+			android:textSize="@dimen/sub_title"
+			android:textStyle="bold"
+			android:visibility="gone"
+			/>
+        <TextView
+            android:id="@+id/ser_aud_subtitle1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ser_aud_title"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/s_mov_subtitle1"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            android:textSize="10dp" />
+        <TextView
+            android:id="@+id/ser_aud_subtitle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ser_aud_subtitle1"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/s_mov_subtitle2"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            android:textSize="10dp" />
+        <TextView
+            android:id="@+id/ser_aud_txt1"
+            android:layout_below="@+id/ser_aud_subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/s_coll_txt1"
+            android:textSize="@dimen/menu"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/ser_aud_edit_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ser_aud_txt1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/s_coll_txt2"
+            android:inputType="text"
+            />
+
+        <TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/ser_aud_txt3"
+		    android:layout_below="@+id/ser_aud_edit_search"
+		    android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/s_coll_txt7"
+            android:textSize="@dimen/menu"
+            android:layout_toLeftOf="@+id/ser_aud_toggleButton1"
+            android:gravity="left"
+		    />
+
+		<!-- <com.triffortali.mattiluck.MySwitch
+		    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+		    android:id="@+id/ser_aud_mySwitch"
+		    android:layout_below="@+id/ser_aud_txt3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:gravity="center_horizontal"
+		    mySwitch:textOff="   OFF  "
+		    mySwitch:textOn=" ON    "
+		    mySwitch:textOnThumb="false"
+		    mySwitch:thumb="@drawable/switch_thumb"
+		    mySwitch:track="@drawable/btn_back" /> -->   
+		<ToggleButton
+        	android:id="@+id/ser_aud_toggleButton1"
+        	android:layout_below="@+id/ser_aud_edit_search"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/bgtoggle"
+        	android:layout_marginRight="20dp"
+        	android:layout_alignParentRight="true"
+        	android:button="@null"
+        	android:layout_marginTop="20dp"
+        	android:textOff=""
+        	android:textOn="" />
+		 <Button
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/search"
+		     android:textColor="@android:color/white"
+		     android:background="@drawable/btn_button" 
+		     android:layout_below="@+id/ser_aud_toggleButton1"
+		     android:layout_marginLeft="20dp"
+		     android:layout_marginTop="20dp"
+		     android:paddingLeft="20dp"
+		     android:paddingRight="20dp"
+		     android:paddingTop="7dp"
+		     android:paddingBottom="7dp"
+		     android:textSize="@dimen/title"
+		     android:onClick="onSearch"
+		     />
+		 <Button
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/reset"
+		     android:textColor="@android:color/white"
+		     android:background="@drawable/btn_button" 
+		     android:layout_below="@+id/ser_aud_toggleButton1"
+		     android:layout_alignParentRight="true"
+		     android:layout_marginRight="20dp"
+		     android:layout_marginTop="20dp"
+		     android:paddingLeft="20dp"
+		     android:paddingRight="20dp"
+		     android:paddingTop="7dp"
+		     android:paddingBottom="7dp"	
+		     android:textSize="@dimen/title"
+		     android:onClick="onReset"	   
+		     />
+</RelativeLayout>
